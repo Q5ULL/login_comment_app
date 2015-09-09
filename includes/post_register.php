@@ -39,13 +39,11 @@ if ($email && $pwd) {
 		}
 	}
 	
-
-
-
-	$sql_query = "INSERT INTO users (email, pwd) VALUES ('" . $email ."','".$encryptedpwd."')";
+	$sql_query = "INSERT INTO users (email, pwd) VALUES ('$email', '$encryptedpwd')";
 	if (mysql_query($sql_query, $link)) {
 		echo "Success! You have registered with the email: " . $email;
 	} else {
+		print_r($encryptedpwd);
 		echo "Sorry, there was an error registering you";
 	}
 
