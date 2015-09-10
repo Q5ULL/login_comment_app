@@ -1,0 +1,5 @@
+query to get all users
+
+loop through with a while
+and kick yourself out of the loop
+	if user_id != session id, then keep going 
