@@ -9,7 +9,7 @@ if (isset($_SESSION['loggedIn'])) {
 		echo "<h1>Hello " . $_SESSION['email'] . "!</h1>";
 		echo "<p>You are logged in.</p>";
 		// Include our comments page from the DB
-		include('comments.php');
+		include('comments_to_me.php');
 		// Include our comments markup
 		include('comments_markup.php');
 	} else {

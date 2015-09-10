@@ -1,6 +1,9 @@
 <?php
+error_reporting(E_ALL);
+
 include('config/session.php');
 include('config/database.php');
+include('connect.php'); 
 ?>
 
 <!doctype html>

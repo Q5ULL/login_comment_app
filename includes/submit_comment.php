@@ -1,21 +1,22 @@
 <?php
 
-// Grab the comment form the markup page
-$comment = $_POST['comment'];
 
+// Grab the comment
+$comment = $_POST['comment'];
+$to_user_id = $_POST['to_user_id'];
 // Username should be set from our session
-$email = $_SESSION['email'];
+$id = $_SESSION['id'];
 
 
 // Do the magic:
 
 // INSERT INTO comments (email, comment) VALUES ('dan', 'hello world!');
-$sql = "INSERT INTO comments (email, comment) VALUES ('" . $email . "', '" .$comment . "')";
+$sql = "INSERT INTO comments (comment, from_user_id, to_user_id) VALUES ('" .$comment . "', $id, $to_user_id)";
 
-	if (mysql_query($sql, $link)) {
-		echo "Success! Your message was posted! <a href='index.php'>Click here to go back</a>";
-	} else {
-		echo "Sorry, there was an error:" . mysql_error();
-	}
+if (mysql_query($sql, $link)) {
+	echo "Success! Your message was posted! <a href='index.php'>Click here to go back</a>";
+} else {
+	echo "Sorry, there was an error:" . mysql_error();
+}
 
 ?>
