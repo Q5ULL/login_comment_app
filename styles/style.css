@@ -20,18 +20,27 @@ nav ul li {
 }
 
 a {
-  transition: 0.3s ease;
-  color: #8B475D;
-  font-size: 20px;
+	color: #8B475D;
   text-decoration: none;
+}
+header a {
+  transition: 0.3s ease;
+  font-size: 20px;
   border-bottom: 4px solid #8B475D;
   padding: 10px 0;
   margin-right: 10px;
 }
-a:hover {
-  border-bottom: 4px solid #ffffff;
-  padding: 6px 0; 
+	header a:hover {
+	  border-bottom: 4px solid #ffffff;
+	  padding: 6px 0; 
+	}
+.friends{
+	transition: .2s ease;
+	font-size: 15px;
 }
+	.friends:hover {
+		border-bottom: 2px solid #8B475D;
+	}
 
 section {
 	padding: 1em;

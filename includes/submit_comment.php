@@ -14,7 +14,7 @@ $id = $_SESSION['id'];
 $sql = "INSERT INTO comments (comment, from_user_id, to_user_id) VALUES ('" .$comment . "', $id, $to_user_id)";
 
 if (mysql_query($sql, $link)) {
-	echo "Success! Your message was posted! <a href='index.php'>Click here to go back</a>";
+	echo "Success! Your message was posted! <a href='index.php'>Go Back to Homepage</a>";
 } else {
 	echo "Sorry, there was an error:" . mysql_error();
 }

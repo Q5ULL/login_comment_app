@@ -13,13 +13,13 @@ $results = mysql_query($query, $link);
 
 while($row = mysql_fetch_array($results)) {
 	// Check the "]row "email" if it matches our POST emai
-	echo "<h1>". $row["first_name"]."</h1>";
-	echo "<h1>". $row["last_name"]."</h1>";
+	echo "<h1>". $row["first_name"]. " " . $row["last_name"]."</h1>";
 }
 
 include("comment_list.php"); 
 showCommentList($user_id);
-include("friend_list.php");
+
+// include("friend_list.php");
 ?>
 
 <?php include('comments_markup.php'); ?>
