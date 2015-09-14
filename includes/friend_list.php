@@ -24,4 +24,8 @@ while ($row = mysql_fetch_array($results)) {
 		"</span><br />";
 }
 
+
+
 ?>
+<!-- http://localhost/login_comment_app/index.php?page=user&id=5 -->
+<!-- <a href="index.php?page=user&id=<?php echo $row["id"];?>"><?php echo $row["name"];?></a> -->
