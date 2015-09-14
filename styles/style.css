@@ -37,6 +37,7 @@ header a {
 .friends{
 	transition: .2s ease;
 	font-size: 15px;
+	margin: 1em;
 }
 	.friends:hover {
 		border-bottom: 2px solid #8B475D;
@@ -51,11 +52,13 @@ header, footer {
 	color: #fff;
 	background-color: #FFE1FF;
 	padding: 1em;
+	margin: 20px 0;
 }
 
 #comments {
-	border-radius: 5px;
-	background-color: gold;
+	/*border-radius: 5px;*/
+	border-bottom: 2px solid salmon;
+	border-top: 2px solid salmon;
 	padding: 10px;
 }
 

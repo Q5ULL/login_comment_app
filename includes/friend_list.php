@@ -3,7 +3,7 @@
 
 // Username should be set from our session
 $id = $_SESSION['id'];
-
+echo "<h1>Your Friends:</h1>";
 $query = "SELECT * FROM users";
 $results = mysql_query($query, $link);
 while ($row = mysql_fetch_array($results)) {

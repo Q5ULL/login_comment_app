@@ -11,7 +11,7 @@ $id = $_SESSION['id'];
 // Do the magic:
 
 // INSERT INTO comments (email, comment) VALUES ('dan', 'hello world!');
-$sql = "INSERT INTO comments (comment, from_user_id, to_user_id) VALUES ('" .$comment . "', $id, $to_user_id)";
+$sql = "INSERT INTO comments (comment, from_user_id, to_user_id, timestamp) VALUES ('" .$comment . "', $id, $to_user_id, CURRENT_TIMESTAMP)";
 
 if (mysql_query($sql, $link)) {
 	echo "Success! Your message was posted! <a href='index.php'>Go Back to Homepage</a>";
