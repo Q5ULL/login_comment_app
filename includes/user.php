@@ -19,6 +19,7 @@ while($row = mysql_fetch_array($results)) {
 
 include("comment_list.php"); 
 showCommentList($user_id);
+include("friend_list.php");
 ?>
 
 <?php include('comments_markup.php'); ?>

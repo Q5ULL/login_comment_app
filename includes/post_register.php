@@ -1,13 +1,4 @@
 <?php
-/*
-
--- My If Statement
-if (isset($_POST['email'])) {
-	$email = $_POST['email'];
-} else {
-	$email = false;
-}
-*/
 
 // Ternary Operations
 $email = isset($_POST['email']) ? $_POST['email'] : false;

@@ -11,27 +11,9 @@ include('connect.php');
 <head>
 	<meta charset="UTF-8">
 	<title>Comments App</title>
-	<style>
-	header {
-		background-color: orange;
-		padding: 2px;
-	}
-	nav ul li {
-		list-style: none;
-		display: inline-block;
-		margin-right: 10px;
-	}
-	section {
-		padding: 10px;
-		border: 1px dotted #CCC;
-		margin: 10px 0;
-	}
-	footer {
-		color: #fff;
-		background-color: purple;
-		padding: 10px;
-	}
-	</style>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 

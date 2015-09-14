@@ -1,5 +1,12 @@
-query to get all users
+
+Run a query to get all users - to post them on the side bar. 
+Link them to their user id and pull up their page. 
+PROBLEM: I dont remember how to link the 
 
 loop through with a while
 and kick yourself out of the loop
+
+Run thorugh the user ids with a while loop, and kick yourself out of the group with the following:
 	if user_id != session id, then keep going 
+
+	
